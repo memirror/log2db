@@ -7,6 +7,14 @@
 # log2db
 基于消息队列的非阻塞式将日志持久化到数据库
 
+## Install
+
+```cmd
+python setup.py sdist
+pip install .
+```
+
+## Usage Example
 ```python
 
 import logging
