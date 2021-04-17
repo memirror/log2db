@@ -4,7 +4,5 @@
 [![use language](https://img.shields.io/badge/language-python3-orange.svg)](https://github.com/xiaodongxiexie/autoSlowSQLKiller)
 [![write by](https://jaywcjlove.github.io/sb/lang/chinese.svg)](https://github.com/xiaodongxiexie/autoSlowSQLKiller)
 
-# autoSlowSQLKiller
-
 # log2db
 基于消息队列的非阻塞式将日志持久化到数据库
