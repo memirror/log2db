@@ -10,7 +10,7 @@
 ## Install
 
 ```cmd
-python setup.py sdist
+git clone https://github.com/xiaodongxiexie/log2db
 pip install .
 ```
 
