@@ -21,7 +21,7 @@ setup(
     version="0.0.1",
     description="logging to database with no block suport by mq and sqlalchemy",
     long_description=long_description(),
-    url="",
+    url="https://github.com/xiaodongxiexie/log2db",
     author="xiaodong",
     author_email="xiaodongliang@outlook.com",
     package_data={
