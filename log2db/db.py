@@ -6,10 +6,8 @@ import os
 import json
 from datetime import datetime
 
-from sqlalchemy.orm import scoped_session
-from sqlalchemy.orm.session import sessionmaker
 from sqlalchemy import Column, create_engine
-from sqlalchemy import Integer, DateTime, String, Numeric
+from sqlalchemy import Integer, DateTime, String
 from sqlalchemy.ext.declarative import declarative_base
 
 from .constants import LOGGING_TABLE_NAME
@@ -34,7 +32,8 @@ class Logging(Base):
     stack_info = Column(String(512))
     lineno = Column(Integer)
     funcName = Column("funcname", String(128))
-    created = Column(DateTime)
+    created = Column(
+    )
     thread = Column(Integer)
     threadName = Column("threadname", String(64))
     process = Column(Integer)
