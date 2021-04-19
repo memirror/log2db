@@ -25,7 +25,7 @@ class LoggingMQHandler(logging.Handler):
         d["message"] = str(d.pop("msg")) % tuple(d.pop("args"))
         for k, v in d.items():
             try:
-                d[k] = json.dumps(v)
+                d[k] = json.dumps(v) if not isinstance(v, str) else v
             except TypeError:
                 d[k] = str(v)
         type(self).mq.push_message(json.dumps(d, ensure_ascii=False))
