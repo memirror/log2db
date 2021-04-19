@@ -10,6 +10,12 @@
 ## Install
 
 ```cmd
+pip install -U https://github.com/xiaodongxiexie/log2db/tree/release
+```
+
+or
+
+```cmd
 git clone https://github.com/xiaodongxiexie/log2db
 pip install .
 ```
