@@ -38,12 +38,25 @@ class Config:
             return self
         return _
 
+    def __call__(self, *args, **kwargs):
+        return self._(*args, **kwargs)
+
+    @classmethod
+    def clear(cls):
+        cls._cfg.clear()
+
 
 if __name__ == '__main__':
 
+    # --------------------------------
     Config().url("localhost")
     Config().echo(False)
 
     print(Config.get("url"))
     print(Config.get("echo"))
-  
+
+    # --------------------------------
+    Config()(age=20, sex="girl", name="Jane")
+    print(Config.get("sex"))
+    print(Config.get("age"))
+    
