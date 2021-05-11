@@ -32,8 +32,7 @@ class Logging(Base):
     stack_info = Column(String(512))
     lineno = Column(Integer)
     funcName = Column("funcname", String(128))
-    created = Column(
-    )
+    created = Column(DateTime)
     thread = Column(Integer)
     threadName = Column("threadname", String(64))
     process = Column(Integer)
